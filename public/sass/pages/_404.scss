@@ -1,0 +1,22 @@
+.error-code {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15rem;
+    font-weight: 600;
+    color: $color-primary-light;
+    z-index: 1;
+}
+
+
+.error-text {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+    font-weight: 400;
+    color: $color-primary-light;
+    z-index: 1;
+}

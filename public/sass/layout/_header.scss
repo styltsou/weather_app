@@ -1,0 +1,26 @@
+.header {
+    width: 100vw;
+    position: relatve;
+
+
+    &__sun-svg {
+        position: absolute;
+        width: 6.5rem;
+        top: 2.6rem;
+        left: 53.3rem;
+        animation: rotate 12s linear infinite;
+        z-index: -1;
+    }
+
+
+    &__cloud-svg {
+        position: absolute;
+        width: 6.5rem;
+        top: 2.5rem;
+        left: 61rem;
+        animation: moveRightLeft 5s linear infinite backwards;
+        z-index: -1;
+    }
+}
+
+

@@ -1,0 +1,76 @@
+.forecast-card {
+    position: absolute;
+    top: 35rem;
+    left: 50%;
+    padding: 4rem 2.6rem;
+    border: none;
+    border-radius: 5px;
+    background-color: $color-white;
+    box-shadow: 0 1rem 1.5rem rgba($color-black, .2);
+    transform:  translateX(-50%) scale(.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .2s ease-in;
+    z-index: 10;
+
+
+    &__list {
+        list-style: none;
+        text-align: center;
+    }
+
+
+    &__item {
+        font-size: 1.8rem;
+        color: $color-primary-dark;
+        padding: .8rem 1.5rem;
+
+        &:not(:last-child) {
+            margin-bottom: 1.5rem;
+        }
+
+
+        &:nth-child(3) {
+            display: inline-block;
+            background-color: $color-primary-light;
+            border-radius: 4px;
+            transform: skewX(-15deg);
+
+        }
+    }
+
+
+    &.visible {
+        visibility: visible;
+        transform: translateX(-50%) scale(1);
+        opacity: 1;
+    }
+}
+
+
+#location {
+    color: green;
+    font-size: 2.2rem;
+}
+
+
+#temperature {
+    font-size: 2rem;
+    color: $color-black;
+    transform: skewX(15deg);
+}
+
+
+.celsius-symbol {
+    transform: skewX(15deg);
+}
+
+
+#precip-probability {
+    font-size: 2rem;
+    color: $color-primary-light;
+}
+
+
+
+

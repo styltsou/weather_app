@@ -1,0 +1,55 @@
+@keyframes shapesFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+@keyframes rotate {
+    from {
+        tranform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+
+@keyframes moveRightLeft {
+    0% {
+        trasnform: trnanslateX(0);
+    }
+    25% {
+        transform: translateX(.8rem);
+    }
+    50% {
+        transform: translateX(0);
+    }
+    75%{
+        transform: translateX(-.5rem);
+    }
+    100% {
+        transorm: translateX(0);
+    }
+}
+
+
+@keyframes load {
+    0%{
+        opacity: 0.08;
+        font-size: 2rem; 
+		font-weight: 400; 
+		filter: blur(5px);
+		letter-spacing: 3px;
+    }
+    100%{
+        opacity: 1; 
+        font-size: 2.2rem; 
+		font-weight:600; 
+		filter: blur(0); 
+        }
+}

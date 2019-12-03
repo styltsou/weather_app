@@ -1,0 +1,24 @@
+{
+  "name": "weather_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "compile:sass": "node-sass public/sass/main.scss public/css/main.css -w",
+    "start": "node src/server.js",
+    "dev": " nodemon -r dotenv/config src/server.js -e js,hbs dotenv_config_path=config/.env"
+  },
+  "keywords": [],
+  "author": "Stylianos Tsoumanis",
+  "license": "ISC",
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "node-sass": "^4.12.0"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.0.4",
+    "leaflet": "^1.5.1",
+    "request": "^2.88.0"
+  }
+}

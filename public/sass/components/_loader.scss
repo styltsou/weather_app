@@ -1,0 +1,18 @@
+.loader {
+	visibility: hidden;
+	position: absolute;
+	top: 40rem;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+
+.loading {
+    visibility: visible;
+	height:100%;
+	margin: auto;
+    font-size: 2rem;
+	animation: load 1s infinite 0s ease-in-out;
+	animation-direction: alternate;
+	text-shadow: 0 0 1px $color-primary-light;
+}
